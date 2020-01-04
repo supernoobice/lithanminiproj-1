@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Gelasio:400,700|Poppins&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Poppins;
+}
+h1, h2, h3, h4, h5 {
+	font-family: Gelasio;
+	font-weight: normal;
+}
+.container {
+	width: 100%;
+	max-width: 1080px;
+	padding: 1em;
+	margin: 0 auto;
+}
+
+.container p {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+#header {
+	background: #0a0f14;
+	color: #FFF;
+}
+
+#content {
+	background: #fff;
+	overflow: hidden;
+}
+
+#content #hero {
+	text-align: center;
+	background: #eff4f9;
+	padding:2em;
+	margin-bottom: 1em;
+	padding: 4em 0;
+}
+
+#content #hero p {
+	font-size: 1.2em;
+}
+
+#hero h2 {
+	font-size: 2em;
+}
+
+
+#content #courses {
+	display: flex;
+}
+
+.color1 {
+	color: #6699cc;
+}
+
+.color2 {
+	color: #0a0f14;
+}
+
+.color3 {
+	color:#eff4f9;
+}
+
+.card {
+	background: #FFF;
+	box-shadow: 0 2px 5px #EEE;
+	padding: 1em;
+	border-radius: 8px;
+	margin: 0.5em;
+	text-align: center;
+	border: 1px solid #EEE;
+}
+.card h3 {
+	margin-bottom: 0.5em;
+	font-weight: bold;
+	color: #6699cc;
+}
+
+.card .img {
+	width: 300px;
+}
+
+#header #nav ul {
+	list-style-type: none;
+	float: right;
+	margin-top: 0.5em;
+}
+
+#header #brand a:link, #header #brand a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#header #nav ul li {
+	display: inline;
+	padding: 0.5em;
+}
+
+#header #nav ul li a:link, #header #nav ul li a:visited {
+	color:#FFF;
+	text-decoration: none;
+	padding:0.5em;
+}
+
+#header #nav ul li a:hover {
+	background: #6699cc;
+	border-radius: 3px;
+	color:#0a0f14;
+	transition: 0.5s;
+}
+
+
+.center {
+	text-align: center;
+}
+#footer {
+	color: #AAA;
+	font-size: 1em;
+	text-align: center;
+	clear: both;
+}
+#footer #nav ul li {
+	display: inline;
+	padding: 0 0.5em;
+
+}
+
+#footer #nav li a:link, #footer #nav li a:visited {
+	text-decoration: none;
+	color: #AAA;
+}
+
+#footer #nav ul li a:hover {
+	color:#000;
+}
+
+.right {
+	float:right;
+	width: 400px;
+	border-radius: 8px;
+}
+
+.p-1 {
+	padding: 1em;
+}
+
+.m-1 {
+	margin: 1em;
+}
+
+.text-left {
+	text-align: left;
+}
