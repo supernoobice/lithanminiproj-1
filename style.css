@@ -123,6 +123,7 @@ h1, h2, h3, h4, h5 {
 	font-size: 1em;
 	text-align: center;
 	clear: both;
+	margin-bottom: 1em;
 }
 #footer #nav ul li {
 	display: inline;
