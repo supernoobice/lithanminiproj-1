@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PHP &amp; MySQL Course - ABC Learning Center</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="pignose.calendar.min.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="js/pignose.calendar.full.min.js"></script>
+</head>
+<body>
+
+	<!-- header -->
+	<div id="header">
+		<div class="container">
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="schedules.html">Schedules</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="privacy.html">Privacy</a></li>
+				</ul>
+			</div><!-- nav-->
+			<h1 id="brand"><a href="index.html">ABC Learning Center</a></h1>
+			
+		</div>
+	</div>
+	<!-- /header -->
+
+	<!-- content -->
+	<div id="content">
+		<div id="hero">
+			<h2>PHP & MySQL</h2>
+		</div><!-- /hero -->
+		<div class="container" style="overflow: auto;">
+			<div class="m-1">
+				<img src="images/phpmysql.png" class="right">
+				<h2>Hack the back-end!</h2> 
+				<p>In this course you will learn to engineer dynamic web applications using PHP and MySQL as its database.</p>
+				<p>You will learn to develop dynamic websites and web applications using PHP that powers most of the popular sites on the web such as Facebook and Wikipedia.</p>
+				<p>With the knowledge you will gain in this course, you are ready to take on a career as web developer or become a freelancer.</p>
+				
+				<a href="#" class="btn btn-calendar">View schedule</a>
+			</div>
+			<div id="tabs">
+				  <ul>
+				    <li><a href="#tabs-1">Objectives</a></li>
+				    <li><a href="#tabs-2">Key Topics</a></li>
+				  </ul>
+				  <div id="tabs-1">
+				    <h2>Objectives</h2>
+					<ul>
+						<li>To have a strong foundation in web development</li>
+		                    <li>To have a strong foundation in MySQL</li>
+		                    <li>To learn how to design scalable databases with MySQL</li>
+		                    <li>To have students be able to produce their own web application from start to finish</li>
+		                    <li>To deploy sites on the web</li>
+		                    <li>To learn to read and write code in PHP</li>
+					</ul>
+				  </div>
+				  <div id="tabs-2">
+				    <h2>Key Topics</h2>
+					<ol>
+		                    <li>Intro to PHP Web Development</li>
+			                <li>Variables</li>
+			                <li>Mathematical Operations</li>
+			                <li>Logical &amp; Comparison Operations</li>
+			                <li>Arrays</li>
+			                <li>Conditional Statements</li>
+			                <li>Functions</li>
+			                <li>Form Handling &amp; Inputs</li>
+			                <li>Classes &amp; Objects</li>
+			                <li>Object Oriented Programming (OOP)</li>
+			                <li>MySQL Database</li>
+			                <li>PHP &amp; MySQL Database</li>
+			                <li>Deploying Your App on the Web</li>
+		                </ol>
+				  </div>
+			
+				</div>
+		</div><!-- container -->
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	<div id="footer">
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="schedules.html">Schedules</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="privacy.html">Privacy</a></li>
+			</ul>
+		</div><!-- nav-->
+		&copy; 2020 ABC Learning Center. All rights reserved.
+	</div>
+	<!-- /footer -->
+
+<script>
+	$(document).ready(function(){
+		$( "#tabs" ).tabs();
+		// Calendar modal
+		var $btn = $('a.btn-calendar').pignoseCalendar({
+		  modal: true, // It means modal will be showed when you click the target button.
+		  format: 'YYYY-MM-DD',
+		  buttons: true,
+		  date: moment('2020-01-17')
+		});
+	});
+</script>
+</body>
+</html>

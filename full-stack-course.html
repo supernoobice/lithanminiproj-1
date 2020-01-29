@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Full Stack Web Development - ABC Learning Center</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="pignose.calendar.min.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="js/pignose.calendar.full.min.js"></script>
+</head>
+<body>
+
+	<!-- header -->
+	<div id="header">
+		<div class="container">
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="schedules.html">Schedules</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="privacy.html">Privacy</a></li>
+				</ul>
+			</div><!-- nav-->
+			<h1 id="brand"><a href="index.html">ABC Learning Center</a></h1>
+			
+		</div>
+	</div>
+	<!-- /header -->
+
+	<!-- content -->
+	<div id="content">
+		<div id="hero">
+			<h2>Full Stock Web Development</h2>
+		</div><!-- /hero -->
+		<div class="container" style="overflow: auto;">
+			<div class="m-1">
+				<img src="images/capstone.png" class="right">
+				<h2>From Jobless to Full Stack Developer</h2> 
+				<p>One of the most in-demand jobs for the next 10 years.</p>
+				<p>Learn how to code in front-end and back-end web technologies. In this course you will learn how to take advantage of HTML, CSS and Javascript to create web applications. When you get into the advanced modules, you will learn how to use frameworks like jQuery and Angular to build front-end apps. And using Java Struts to develop the backend server.</p>
+				
+				<a href="#" class="btn btn-calendar">View schedule</a>
+			</div>
+			<div id="tabs">
+				  <ul>
+				    <li><a href="#tabs-1">Objectives</a></li>
+				    <li><a href="#tabs-2">Key Topics</a></li>
+				  </ul>
+				  <div id="tabs-1">
+				    <h2>Objectives</h2>
+					<ul>
+						<li>To have a strong foundation in web development</li>
+		                    <li>To have a strong foundation in Databases</li>
+		                    <li>To learn how to design scalable databases with MySQL</li>
+		                    <li>To have students be able to produce their own web application from start to finish</li>
+		                    <li>To deploy sites on the web</li>
+		                    <li>To learn to read and write code in Java</li>
+					</ul>
+				  </div>
+				  <div id="tabs-2">
+				    <h2>Key Topics</h2>
+					<ol>
+		                    <li>Module 1: Basic Java</li>
+		                    <li>Module 2: HTML, CSS and jQuery</li>
+		                    <li>Module 3: Front-end Development using Angular</li>
+		                    <li>Module 4: Back-end Development using Java Struts</li>
+		                </ol>
+				  </div>
+			
+				</div>
+		</div><!-- container -->
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	<div id="footer">
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="schedules.html">Schedules</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="privacy.html">Privacy</a></li>
+			</ul>
+		</div><!-- nav-->
+		&copy; 2020 ABC Learning Center. All rights reserved.
+	</div>
+	<!-- /footer -->
+
+<script>
+	$(document).ready(function(){
+		$( "#tabs" ).tabs();
+		// Calendar modal
+		var $btn = $('a.btn-calendar').pignoseCalendar({
+		  modal: true, // It means modal will be showed when you click the target button.
+		  format: 'YYYY-MM-DD',
+		  buttons: true,
+		  date: moment('2020-01-20')
+		});
+	});
+</script>
+</body>
+</html>

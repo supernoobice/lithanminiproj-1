@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML, CSS and jQuery - ABC Learning Center</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="pignose.calendar.min.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="js/pignose.calendar.full.min.js"></script>
+</head>
+<body>
+
+	<!-- header -->
+	<div id="header">
+		<div class="container">
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="schedules.html">Schedules</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="privacy.html">Privacy</a></li>
+				</ul>
+			</div><!-- nav-->
+			<h1 id="brand"><a href="index.html">ABC Learning Center</a></h1>
+			
+		</div>
+	</div>
+	<!-- /header -->
+
+	<!-- content -->
+	<div id="content">
+		<div id="hero">
+			<h2>HTML, CSS &amp; jQuery</h2>
+		</div><!-- /hero -->
+		<div class="container" style="overflow: auto;">
+			<div class="m-1">
+				<img src="images/htmlcssjquery.png" class="right">
+				<h2>Your starting point to web mastery!</h2> 
+				<p>In this course you would learn how to design a website and code it to make it viewable on the web, on desktop computers, on mobile phones and tablets.</p>
+				<p>It will also serve as a strong base should you decide to further pursue a career in web development, web design or android application development.</p>
+				<p>HTML is the language of the web. CSS is the aesthetics that gives design to the page. jQuery is what makes a web page come alive and interactive. Learn all of this in one course plus a lot more.</p>
+				
+				<a href="#" class="btn btn-calendar">View schedule</a>
+			</div>
+			<div id="tabs">
+				  <ul>
+				    <li><a href="#tabs-1">Objectives</a></li>
+				    <li><a href="#tabs-2">Key Topics</a></li>
+				  </ul>
+				  <div id="tabs-1">
+				    <h2>Objectives</h2>
+					<ul>
+						<li>To have a strong foundation in web development</li>
+						<li>To have students be able to produce their own website from start to finish</li>
+						<li>To deploy sites on the web</li>
+						<li>To learn to read and write code</li>
+					</ul>
+				  </div>
+				  <div id="tabs-2">
+				    <h2>Key Topics</h2>
+					<ol>
+		                    <li>Introduction to HTML/CSS &amp; jQuery</li>
+		                    <li>Foundation HTML</li>
+		                    <li>Foundation CSS</li>
+		                    <li>HTML Inputs &amp; Forms</li>
+		                    <li>Using DIVS &amp; Best Practices</li>
+		                    <li>Web Page Segmentation</li>
+		                    <li>Positioning Page Elements</li>
+		                    <li>Photoshop Orientation</li>
+		                    <li>Converting Designs to HTML/CSS</li>
+		                    <li>Responsive Design</li>
+		                    <li>Introduction to jQuery</li>
+		                    <li>Basic interaction with jQuery</li>
+		                    <li>Deploying Your Site Live on the Web</li>
+		                </ol>
+				  </div>
+			
+				</div>
+		</div><!-- container -->
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	<div id="footer">
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="schedules.html">Schedules</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="privacy.html">Privacy</a></li>
+			</ul>
+		</div><!-- nav-->
+		&copy; 2020 ABC Learning Center. All rights reserved.
+	</div>
+	<!-- /footer -->
+
+<script>
+	$(document).ready(function(){
+		$( "#tabs" ).tabs();
+		// Calendar modal
+		var $btn = $('a.btn-calendar').pignoseCalendar({
+		  modal: true, // It means modal will be showed when you click the target button.
+		  format: 'YYYY-MM-DD',
+		  buttons: true,
+		  date: moment('2020-01-15')
+		});
+	});
+</script>
+</body>
+</html>
